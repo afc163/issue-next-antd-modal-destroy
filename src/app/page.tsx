@@ -1,11 +1,10 @@
 "use client";
 
 import { Button, Modal } from "antd";
-import confirm from "antd/es/modal/confirm";
 
 export default function Home() {
   function handleButtonClick() {
-    confirm({
+    Modal.confirm({
       title: "Modal opened with 'confirm' method",
       footer: (
         <Button
